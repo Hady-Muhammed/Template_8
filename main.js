@@ -1,4 +1,7 @@
 let nav = document.querySelector("nav");
+let header = document.querySelector("header");
+
+header.style.zIndex = "3";
 
 window.onscroll = function () {
     if (window.scrollY >= 150) 
