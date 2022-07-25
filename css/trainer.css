@@ -158,7 +158,11 @@ section .container .row aside a:hover {
   background-color: #f5634b;
   color: white;
 }
-
+@media (max-width: 995px) {
+  section .container .col-md {
+    flex-direction: column;
+  }
+}
 footer {
   background-color: #181a23;
   padding: 5em 3em;

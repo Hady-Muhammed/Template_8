@@ -218,7 +218,22 @@ section .container a:hover {
   font-size: 3.5em;
   margin: 0.7em 0;
 }
-
+@media (max-width: 800px) {
+  .reach .flexbox {
+    flex-direction: column;
+  }
+  .reach .container {
+    top: 5%;
+  }
+  .reach .flexbox .box  {
+    width: 100%;
+    padding: 0;
+  }
+  .reach p ,
+  .reach span {
+    margin: 0 !important;
+  }
+}
 footer {
   background-color: #181a23;
   padding: 5em 3em;

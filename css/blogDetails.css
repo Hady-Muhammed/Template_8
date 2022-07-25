@@ -244,7 +244,36 @@ header .dropdown-menu .dropdown-item:hover {
   color: white;
   border: none;
 }
-
+@media (max-width: 450px) {
+  .blog {
+    padding: 0;
+  }
+  .blog .row {
+    flex-direction: column-reverse;
+  }
+  .blog .pagination {
+    padding-bottom: 2em !important;
+  }
+  .blog .page-link {
+    padding: 1em !important;
+  }
+  .col-3 ,
+  .col-9 {
+    width: 100% !important;
+  }
+  .col-3 {
+    padding-top: 2em;
+  }
+  .col-3 input {
+    width: 100%;
+  }
+  .blog .flex {
+    flex-direction: column;
+  }
+  .posts {
+    flex-direction: column;
+  }
+}
 footer {
   background-color: #181a23;
   padding: 5em 3em;

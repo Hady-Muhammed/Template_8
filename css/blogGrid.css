@@ -128,7 +128,17 @@ header .dropdown-menu .dropdown-item:hover {
   color: white;
   border: none;
 }
-
+@media (max-width: 450px) {
+  .blog {
+    padding: 0;
+  }
+  .blog .pagination {
+    padding-bottom: 2em !important;
+  }
+  .blog .page-link {
+    padding: 1em !important;
+  }
+}
 footer {
   background-color: #181a23;
   padding: 5em 3em;

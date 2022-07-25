@@ -100,6 +100,14 @@ section .container .flexbox {
   justify-content: space-between;
   margin-bottom: 12em;
 }
+@media (max-width: 767px) {
+  section .container .flexbox {
+    flex-direction: column-reverse;
+  }
+  section .container .flexbox img {
+    width: 100% !important;
+  }
+}
 section .container .flexbox img {
   width: 22%;
 }

@@ -135,7 +135,14 @@ section .container aside {
 section .container span, section .container p {
   color: rgba(0, 0, 0, 0.6);
 }
-
+@media (max-width: 769px) {
+  section .container .col-md {
+    flex-direction: column;
+  } 
+  section .container img {
+    width: 100%;
+  }
+}
 .reviews {
   color: white;
   background-image: url(../images/bg-cta.jpg);

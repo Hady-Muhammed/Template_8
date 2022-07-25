@@ -215,7 +215,11 @@ section .container .gridbox .box:not(:nth-child(2)) a:hover {
   color: #fff !important;
   transform: translateY(-5px) !important;
 }
-
+@media (max-width: 400px) {
+  section .container .gridbox {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
 main {
   margin-top: 6em;
   padding: 10em 0;
@@ -353,7 +357,11 @@ main .container .gridbox .box:not(:nth-child(2)) a:hover {
   color: #fff !important;
   transform: translateY(-5px) !important;
 }
-
+@media (max-width: 400px) {
+  main .container .gridbox {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
 footer {
   background-color: #181a23;
   padding: 5em 3em;
