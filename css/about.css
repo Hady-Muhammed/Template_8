@@ -164,8 +164,13 @@ section .container .main-heading-content::before {
 section .container .gridbox {
   margin-top: 3em;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1em 2em;
+}
+@media (min-width: 1240px) {
+  section .container .gridbox {
+    grid-template-columns: repeat(3, minmax(300px, 1fr)) !important;
+  }
 }
 section .container .gridbox .box {
   text-align: center;
@@ -227,7 +232,12 @@ section .container .gridbox .box.act h3, section .container .gridbox .box.act p 
 }
 .gallery .gridbox {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (min-width: 1440px) {
+  .gallery .gridbox {
+    grid-template-columns: repeat(4, minmax(300px, 1fr)) !important;
+  }
 }
 .gallery .gridbox img {
   width: 100%;

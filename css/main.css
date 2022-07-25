@@ -411,7 +411,6 @@ section::before {
 .services .container .row .col-md:hover a, .services .container .row .col-md:hover i {
   color: white;
 }
-
 .gallery .container .main-heading-content {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -441,7 +440,12 @@ section::before {
 }
 .gallery .gridbox {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (min-width: 1440px) {
+  section .container .gridbox {
+    grid-template-columns: repeat(4, minmax(300px, 1fr)) !important;
+  }
 }
 .gallery .gridbox img {
   width: 100%;
